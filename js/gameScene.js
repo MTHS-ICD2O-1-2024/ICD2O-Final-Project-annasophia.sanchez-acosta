@@ -47,6 +47,7 @@ class GameScene extends Phaser.Scene {
     this.coinImage.setVisible(false)
 
     // Optional: clear the result text while waiting
+    // got from chatgpt
     this.resultText.setText('Flipping...')
 
     // Wait 3 seconds, then show result
@@ -63,6 +64,7 @@ class GameScene extends Phaser.Scene {
 
       this.flipCount++
       this.scoreText.setText('Flips: ' + this.flipCount)
+      // got from chatgpt
       this.resultText.setText(
         'Result: ' + answer.charAt(0).toUpperCase() + answer.slice(1)
       )
